@@ -18,7 +18,7 @@ A (3,6,8); B (2,1,-7), -> 15.84
 A (7,-5, 0); B (1,-1,9) -> 11.53*/
 
 
-double dim (double xA, double yA, double zA, double xB, double yB, double zB)
+/*double dim (double xA, double yA, double zA, double xB, double yB, double zB)
 {
     double A = Math.Pow(xB - xA, 2);
     double B = Math.Pow(yB - yA, 2);
@@ -43,7 +43,7 @@ Console.WriteLine("Введите координату Z  второго чис�
 Double zB = Convert.ToDouble(Console.ReadLine());
 
 double fineres=dim(xA, xB, yA, yB, zA, zB);
-Console.WriteLine($"Расстояние равно {fineres}");
+Console.WriteLine($"Расстояние равно {fineres}");*/
 
 
 
@@ -53,5 +53,21 @@ Console.WriteLine($"Расстояние равно {fineres}");
 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
+
+void cube (int num)
+{
+    int count = 1;
+    while(count <= num)
+    {
+        Console.Write($"{Math.Pow(count, 3)} ");
+        if (count != num) Console.Write(";"); 
+        count++;
+    }
+}
+
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Куб чисел от 1 до {N} равен ");
+cube(N);
 
 
