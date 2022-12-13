@@ -5,11 +5,49 @@
 23432 -> да*/
 
 
+/* Вариант №1
+int Rev(int num)
+{
+    int RevNum = 0;
+    
+    {
+        RevNum = RevNum * 10 + num % 10;           // 12321 * 10 = 123210 + 123210
+        num = num / 10;                            // 12321 / 10
+        if (num == RevNum) Console.Write("Число является палиндромом");
+        else Console.Write("Не является палиндромом");
+    }
+    
+}
 
-//Console.WriteLine("Введите число, что бы узнать, является ли оно палиндромом: ");
-//int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число, что бы узнать, является ли оно палиндромом: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Rev(num);
 
 
+//Вариант №2
+Console.WriteLine("Введите число на проверку: ");
+int pal = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите кол-во символов в числе: ");
+int simb = Convert.ToInt32(Console.ReadLine());
+
+void Palindr (int num)
+{                                           
+int count = 0;
+while (count < simb % 2);
+int del = 10000;
+int ost = 10;
+int num1 = num / del;
+int num2 = num % ost;
+    {if (num1 - num2 != 0) Console.Write("Не палиндром");
+    
+        else(del / 10) (ost * 10);
+            count++;
+    }
+return;
+}
+Console.WriteLine($"Число {Palindr} является палиндромом");
+*/
+ 
 
 
 /*Задача 21
@@ -54,7 +92,7 @@ Console.WriteLine($"Расстояние равно {fineres}");*/
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-void cube (int num)
+/*void cube (int num)
 {
     int count = 1;
     while(count <= num)
@@ -68,6 +106,6 @@ void cube (int num)
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Куб чисел от 1 до {N} равен ");
-cube(N);
+cube(N);*/
 
 
